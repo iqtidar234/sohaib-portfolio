@@ -17,12 +17,16 @@ import {
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 
 const info = [
-  { icon: <FaPhoneAlt />, title: "phone", description: "(+40) 321 654 876" },
-  { icon: <FaEnvelope />, title: "Email", description: "Youremail@gmail.com" },
+  { icon: <FaPhoneAlt />, title: "phone", description: "(+92) 3120923848" },
+  {
+    icon: <FaEnvelope />,
+    title: "Email",
+    description: "hasnainkhanu0@gmail.com",
+  },
   {
     icon: <FaMapMarkedAlt />,
     title: "Address",
-    description: "Code Corner, Tech Town 13579",
+    description: "Kohat, Pakistan",
   },
 ];
 
@@ -42,10 +46,10 @@ const Contact = () => {
           {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl ">
-              <h3 className="text-4xl text-accent">Let&apos;s word together</h3>
+              <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
               <p className="text-white/60 ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                sint excepturi beatae corporis inventore!
+                to transform your ideas into impactful designs and innovative
+                solutions.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

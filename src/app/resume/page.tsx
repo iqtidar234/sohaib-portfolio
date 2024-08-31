@@ -8,6 +8,7 @@ import {
   FaFigma,
   FaNodeJs,
 } from "react-icons/fa";
+import { DiIllustrator, DiPhotoshop } from "react-icons/di";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
@@ -15,14 +16,14 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About me",
   descripiton:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur tenetur libero quo quis.",
+    " 'm Hasnain Ahmed, a UI/UX designer with 2.5 years of experience, blending creative design with technical expertise. I specialize in crafting user-friendly interfaces and managing social media branding.",
   info: [
     { fieldName: "Name", fieldValue: "Hasnain Ahmad" },
-    { fieldName: "Phone", fieldValue: "(+40) 321 654 678" },
-    { fieldName: "Experience", fieldValue: "12+ Years" },
-    { fieldName: "Skype", fieldValue: "hasnain81" },
+    { fieldName: "Phone", fieldValue: "(+92) 3120923848" },
+    { fieldName: "Experience", fieldValue: "3 Years" },
+    { fieldName: "Skype", fieldValue: "hasnainahmed" },
     { fieldName: "Nationality", fieldValue: "Pakistani" },
-    { fieldName: "Email", fieldValue: "hasnain07@gmail.com" },
+    { fieldName: "Email", fieldValue: "hasnainkhanu0@gmail.com" },
     { fieldName: "Freelance", fieldValue: "Available" },
     { fieldName: "Language", fieldValue: "English, Urdu" },
   ],
@@ -31,39 +32,14 @@ const about = {
 // expereince data
 const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "my expereince",
+  title: "My Experience",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur tenetur libero quo quis.",
+    "Crafting engaging user interfaces, optimizing user experiences, and leading teams to deliver impactful solutions.",
   items: [
     {
-      company: "Tech Solutions Inc.",
-      postion: "Full Stack Developer",
-      duration: "2024 - Present",
-    },
-    {
-      company: "Web Design Studio",
-      postion: "Front-End Developer Intern",
-      duration: "Summer 2021",
-    },
-    {
-      company: "E-commmerce Statup",
-      postion: "Freelance Web Developer",
-      duration: "2020 - 2021",
-    },
-    {
-      company: "Tech Academy",
-      postion: "Teaching Assistant",
-      duration: "2019 - 2020",
-    },
-    {
-      company: "Digital Agency",
-      postion: "UI/UX Designer",
-      duration: "2018 - 2019",
-    },
-    {
-      company: "Software Development Firm",
-      postion: "Junior Developer",
-      duration: "2017 - 2018",
+      company: "Uzair Technology",
+      position: "UI/UX Designer and Social Media Branding Specialist",
+      duration: "2022 - Present",
     },
   ],
 };
@@ -71,39 +47,24 @@ const experience = {
 // education data
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "my education",
+  title: "My Education",
   description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur tenetur libero quo quis.",
+    "A blend of creative flair and a strong tech foundation, bridging aesthetics and functionality.",
   items: [
     {
-      insitution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
+      institution: "International Public School",
+      degree: "Matric Education",
+      duration: "Completed",
     },
     {
-      insitution: "Codecademy",
-      degree: "Front-end Track",
-      duration: "2022",
+      institution: "Karwan Model College Kohat",
+      degree: "FSC",
+      duration: "Completed",
     },
     {
-      insitution: "Online Course",
-      degree: "Programing Course",
-      duration: "2020 - 2021",
-    },
-    {
-      insitution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
-    },
-    {
-      insitution: "Design School",
-      degree: "Diploma in Graphic Design",
-      duration: "2016 - 2018",
-    },
-    {
-      insitution: "Community College",
-      degree: "Associate Degree in Computer Science",
-      duration: "2014 - 2016",
+      institution: "Kohat University of Science and Technology",
+      degree: "Bachelor of Software Engineering",
+      duration: "Currently in 7th Semester",
     },
   ],
 };
@@ -112,16 +73,11 @@ const education = {
 const skills = {
   title: "My skills",
   descripton:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur tenetur libero quo quis.",
+    "Expert in UI/UX design and social media branding, with a strong command of tools like Figma to create engaging and intuitive digital experiences.",
   skillList: [
-    { icon: <FaHtml5 />, name: "html 5" },
-    { icon: <FaCss3 />, name: "css 3" },
-    { icon: <FaJs />, name: "javascript" },
-    { icon: <FaReact />, name: "react.js" },
-    { icon: <SiNextdotjs />, name: "next.js" },
-    { icon: <SiTailwindcss />, name: "tailwind.css" },
-    { icon: <FaNodeJs />, name: "node.js" },
     { icon: <FaFigma />, name: "figma" },
+    { icon: <DiIllustrator />, name: "Illustration" },
+    { icon: <DiPhotoshop />, name: "PhotoShop" },
   ],
 };
 
@@ -175,8 +131,8 @@ const Resume = () => {
                           className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col items-center justify-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                            {item.postion}
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] mb-4 text-center lg:text-left">
+                            {item.position}
                           </h3>
                           <div className="flex items-center gap-3">
                             {/*dot  */}
@@ -213,7 +169,7 @@ const Resume = () => {
                           <div className="flex items-center gap-3">
                             {/*dot  */}
                             <span className=" w-[6px] h-[6px] rounded-full"></span>
-                            <p className="text-white/60">{item.insitution}</p>
+                            <p className="text-white/60">{item.institution}</p>
                           </div>
                         </li>
                       );

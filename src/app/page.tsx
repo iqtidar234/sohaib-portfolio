@@ -1,3 +1,4 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -5,33 +6,45 @@ import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import { useEffect, useState } from "react";
 export default function Home() {
+  const [baseUrl, setBaseUrl] = useState("");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setBaseUrl(window.location.origin);
+    }
+  }, []);
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none ">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">UI/UX Designer </span>
             <h1 className="h1">
               Hello I&apos;m <br />
               <span className="text-accent">Hasnain </span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegent digital experiences and I am
-              proficient in various programing languages and technologies
+              I specialize in designing seamless and intuitive user experiences,
+              leveraging my expertise in design principles and tools to
+              transform complex ideas into visually compelling and user-friendly
+              digital products.
             </p>
 
             {/* button and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size={"lg"}
-                className="uppercase flex items-center gap-2"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+              <a href={baseUrl + "/my-portfolio.pdf"} target="_blank">
+                <Button
+                  variant="outline"
+                  size={"lg"}
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </a>
               <div className="mb8 xl:mb-0 ">
                 <Social
                   containerStyles="flex gap-6"
