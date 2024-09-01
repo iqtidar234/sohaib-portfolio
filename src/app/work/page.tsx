@@ -28,7 +28,7 @@ const projects = [
     description:
       "I design intuitive and visually appealing app interfaces that enhance user engagement",
     stack: [{ name: "Figma" }],
-    image: "/assets/work/thumb1.png",
+    image: "/assets/work/laundry-mobile.png",
     live: "",
     github: "",
   },
@@ -39,7 +39,7 @@ const projects = [
     description:
       "I develop responsive and user-friendly web interfaces that ensure a seamless online experience.",
     stack: [{ name: "Figma" }],
-    image: "/assets/work/thumb2.png",
+    image: "/assets/work/marathon-web.png",
     live: "",
     github: "",
   },
@@ -50,7 +50,7 @@ const projects = [
     description:
       "I produce in-depth UX case studies that illustrate my approach to solving design problems and optimizing user experiences.",
     stack: [{ name: "Figma" }],
-    image: "/assets/work/thumb3.png",
+    image: "/assets/work/case-study.png",
     live: "",
     github: "",
   },
