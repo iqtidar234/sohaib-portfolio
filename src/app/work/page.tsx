@@ -29,7 +29,7 @@ const projects = [
       "I design intuitive and visually appealing app interfaces that enhance user engagement",
     stack: [{ name: "Figma" }],
     image: "/assets/work/laundry-mobile.png",
-    live: "",
+    live: "https://www.behance.net/gallery/206657793/Revolutionizing-Dental-Care",
     github: "",
   },
   {
@@ -40,7 +40,7 @@ const projects = [
       "I develop responsive and user-friendly web interfaces that ensure a seamless online experience.",
     stack: [{ name: "Figma" }],
     image: "/assets/work/marathon-web.png",
-    live: "",
+    live: "https://www.behance.net/gallery/204914731/Showcase-Of-Restaurant-Website-Design",
     github: "",
   },
   {
@@ -51,7 +51,7 @@ const projects = [
       "I produce in-depth UX case studies that illustrate my approach to solving design problems and optimizing user experiences.",
     stack: [{ name: "Figma" }],
     image: "/assets/work/case-study.png",
-    live: "",
+    live: "https://www.behance.net/gallery/205021653/Tutor-Match-UX-Case-Study",
     github: "",
   },
 ];
@@ -107,7 +107,7 @@ const Work = () => {
               {/* button */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                {/* <Link href={project.live}>
+                <Link href={project.live} target="blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -118,7 +118,7 @@ const Work = () => {
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                </Link> */}
+                </Link>
 
                 {/* github project button */}
                 {/* <Link href={project.github}>

@@ -10,21 +10,21 @@ const services = [
     title: "Web UI",
     description:
       "I design clean and intuitive web interfaces that ensure a seamless user experience across all devices.",
-    href: "",
+    href: "https://www.behance.net/gallery/204914731/Showcase-Of-Restaurant-Website-Design",
   },
   {
     num: "02",
     title: "App UI",
     description:
       "I craft engaging and user-friendly app interfaces, focusing on ease of use and aesthetic appeal.",
-    href: "",
+    href: "https://www.behance.net/gallery/205021653/Tutor-Match-UX-Case-Study",
   },
   {
     num: "03",
     title: "UX Case Studies",
     description:
       "I create in-depth UX case studies that highlight the research, design process, and solutions behind each project.",
-    href: "",
+    href: "https://www.behance.net/gallery/206657793/Revolutionizing-Dental-Care",
   },
   {
     num: "04",
@@ -58,6 +58,7 @@ const Services = () => {
                 </div>
                 <Link
                   href={service.href}
+                  target="blank"
                   className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                 >
                   <BsArrowDownRight className="text-primary text-3xl" />

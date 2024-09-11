@@ -35,7 +35,11 @@ export default function Home() {
 
             {/* button and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a href={baseUrl + "/my-portfolio.pdf"} target="_blank">
+              <a
+                href="/my-portfolio.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button
                   variant="outline"
                   size={"lg"}
