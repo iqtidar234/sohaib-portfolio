@@ -6,9 +6,9 @@ import { AiFillInstagram } from "react-icons/ai";
 const socials = [
   {
     icon: <FaLinkedinIn />,
-    path: "https://www.linkedin.com/in/hasnain-ahmed-1a9547283/?lipi=urn%3Ali%3Apage%3Ad_flagship3_notifications%3BIFZeIOfrSseLqc1G%2FVStdQ%3D%3D",
+    path: "https://www.linkedin.com/in/iqtidar-hussain-49b45a287/",
   },
-  { icon: <AiFillInstagram />, path: "" },
+  { icon: <FaGithub />, path: "https://github.com/iqtidar234" },
 ];
 const Social = ({
   containerStyles,
@@ -21,13 +21,7 @@ const Social = ({
     <div className={containerStyles}>
       {socials.map((item, index) => {
         return (
-          <a
-            href={item.path}
-            key={index}
-            className={iconStyles}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href={item.path} key={index} className={iconStyles} target="blank">
             {item.icon}
           </a>
         );

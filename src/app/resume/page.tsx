@@ -1,29 +1,21 @@
 "use client";
-
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
-  FaNodeJs,
-} from "react-icons/fa";
-import { DiIllustrator, DiPhotoshop } from "react-icons/di";
-
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaGithub } from "react-icons/fa";
+import { RiNextjsLine } from "react-icons/ri";
+import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
+import { TbBrandRedux } from "react-icons/tb";
 
 // about data
 const about = {
   title: "About me",
   descripiton:
-    " 'm Hasnain Ahmed, a UI/UX designer with 2.5 years of experience, blending creative design with technical expertise. I specialize in crafting user-friendly interfaces and managing social media branding.",
+    " I'm Iqtidar Hussain, a frontend React.js and Next.js developer with 1 year of experience. I specialize in building responsive, dynamic web applications, transforming complex ideas into intuitive, user-friendly interfaces. My expertise includes collaborating on projects that require seamless functionality and engaging digital experiences.",
   info: [
-    { fieldName: "Name", fieldValue: "Hasnain Ahmad" },
-    { fieldName: "Phone", fieldValue: "(+92) 3120923848" },
-    { fieldName: "Experience", fieldValue: "3 Years" },
-    { fieldName: "Skype", fieldValue: "hasnainahmed" },
+    { fieldName: "Name", fieldValue: "Iqtidar Hussain" },
+    { fieldName: "Phone", fieldValue: "(+92) 3149133164" },
+    { fieldName: "Experience", fieldValue: "1 Years" },
+    { fieldName: "Skype", fieldValue: "iqtidarhussain" },
     { fieldName: "Nationality", fieldValue: "Pakistani" },
-    { fieldName: "Email", fieldValue: "hasnainkhanu0@gmail.com" },
+    { fieldName: "Email", fieldValue: "iqtidar2345@gmail.com" },
     { fieldName: "Freelance", fieldValue: "Available" },
     { fieldName: "Language", fieldValue: "English, Urdu" },
   ],
@@ -34,11 +26,11 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "Crafting engaging user interfaces, optimizing user experiences, and leading teams to deliver impactful solutions.",
+    "As a web developer with over a year of experience, I have worked at Uzair Technology, contributing to notable projects such as FarmnCho, Tippie-Doo, PrestigePlusRewards, and Redvok. Beyond hands-on development, I also train and mentor web development teams, ensuring that best practices are followed and fostering growth within the team. My focus is on creating seamless, user-centric web experiences that drive business success.",
   items: [
     {
       company: "Uzair Technology",
-      position: "UI/UX Designer and Social Media Branding Specialist",
+      position: "Frontend React.js Next.js Developer",
       duration: "2022 - Present",
     },
   ],
@@ -52,7 +44,7 @@ const education = {
     "A blend of creative flair and a strong tech foundation, bridging aesthetics and functionality.",
   items: [
     {
-      institution: "International Public School",
+      institution: "Al-Ilam Public School",
       degree: "Matric Education",
       duration: "Completed",
     },
@@ -63,7 +55,7 @@ const education = {
     },
     {
       institution: "Kohat University of Science and Technology",
-      degree: "Bachelor of Software Engineering",
+      degree: "Bachelor of Computer Science",
       duration: "Currently in 7th Semester",
     },
   ],
@@ -73,11 +65,16 @@ const education = {
 const skills = {
   title: "My skills",
   descripton:
-    "Expert in UI/UX design and social media branding, with a strong command of tools like Figma to create engaging and intuitive digital experiences.",
+    "Expert in building responsive and intuitive web applications, with a strong command of tools like React.js and Next.js to create engaging and seamless digital experiences.",
   skillList: [
-    { icon: <FaFigma />, name: "figma" },
-    { icon: <DiIllustrator />, name: "Illustration" },
-    { icon: <DiPhotoshop />, name: "PhotoShop" },
+    { icon: <FaReact />, name: "React.js" },
+    { icon: <SiNextdotjs />, name: "Next.js" },
+    { icon: <FaJs />, name: "JavaScript (ES6+)" },
+    { icon: <FaHtml5 />, name: "HTML5" },
+    { icon: <FaCss3 />, name: "CSS3" },
+    { icon: <SiTailwindcss />, name: "Tailwind.css" },
+    { icon: <FaGithub />, name: "Github" },
+    { icon: <TbBrandRedux />, name: "React/Redux" },
   ],
 };
 

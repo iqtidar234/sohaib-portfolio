@@ -21,16 +21,17 @@ export default function Home() {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none ">
-            <span className="text-xl">UI/UX Designer </span>
+            <span className="text-xl">Front-End Developer </span>
             <h1 className="h1">
               Hello I&apos;m <br />
-              <span className="text-accent">Hasnain </span>
+              <span className="text-accent">Iqtidar Hussain</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I specialize in designing seamless and intuitive user experiences,
-              leveraging my expertise in design principles and tools to
-              transform complex ideas into visually compelling and user-friendly
-              digital products.
+              I specialize in building seamless and intuitive web applications
+              using React.js and Next.js. With 1 year of hands-on experience, I
+              excel at transforming complex requirements into dynamic,
+              user-friendly interfaces, ensuring smooth functionality and
+              exceptional user experiences across all devices.
             </p>
 
             {/* button and socials */}

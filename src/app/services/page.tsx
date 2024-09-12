@@ -7,30 +7,30 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Web UI",
+    title: "Responsive Web Development",
     description:
-      "I design clean and intuitive web interfaces that ensure a seamless user experience across all devices.",
+      "I create responsive websites that adapt seamlessly to different screen sizes and devices, ensuring an optimal user experience on desktop, tablet, and mobile. My designs prioritize accessibility and performance across all platforms.",
     href: "https://www.behance.net/gallery/204914731/Showcase-Of-Restaurant-Website-Design",
   },
   {
     num: "02",
-    title: "App UI",
+    title: "Single Page Applications (SPA)",
     description:
-      "I craft engaging and user-friendly app interfaces, focusing on ease of use and aesthetic appeal.",
+      " Leveraging the power of React.js and Next.js, I develop efficient Single Page Applications that provide a fast, dynamic user experience without constant page reloads, improving the overall performance and interactivity of your web app.",
     href: "https://www.behance.net/gallery/205021653/Tutor-Match-UX-Case-Study",
   },
   {
     num: "03",
-    title: "UX Case Studies",
+    title: " UI/UX Integration",
     description:
-      "I create in-depth UX case studies that highlight the research, design process, and solutions behind each project.",
+      "I integrate visually appealing, user-centric designs with pixel-perfect precision into functional code, ensuring your web applications are not only aesthetically pleasing but also intuitive to use, delivering seamless user experiences.",
     href: "https://www.behance.net/gallery/206657793/Revolutionizing-Dental-Care",
   },
   {
     num: "04",
-    title: "Social Media Branding",
+    title: "API Integration and State Management",
     description:
-      "I develop cohesive social media branding that effectively communicates a brand's identity and resonates with the target audience.",
+      "I handle complex API integrations and state management with tools like Redux and React Context. This ensures smooth data flow across your application, keeping everything synchronized and enhancing user interaction with real-time updates",
     href: "",
   },
 ];
@@ -56,13 +56,13 @@ const Services = () => {
                 <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
                   {service.num}
                 </div>
-                <Link
+                {/* <Link
                   href={service.href}
                   target="blank"
                   className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                 >
                   <BsArrowDownRight className="text-primary text-3xl" />
-                </Link>
+                </Link> */}
               </div>
               {/* title */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">

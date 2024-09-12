@@ -23,36 +23,53 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "App ",
-    title: "projects 1",
+    category: "Saltmine ",
+    title: "",
     description:
-      "I design intuitive and visually appealing app interfaces that enhance user engagement",
-    stack: [{ name: "Figma" }],
-    image: "/assets/work/laundry-mobile.png",
+      "I developed a website for a saltmine that includes 3D elements to make the user experience more interactive and engaging. The site is designed to be visually appealing and easy to navigate, showcasing the unique features of the saltmine while maintaining smooth functionality.",
+    stack: [
+      { name: "HTML5" },
+      { name: "CSS3" },
+      { name: "JavaScript" },
+      { name: "Next.js" },
+      { name: "MaterialUi" },
+      { name: "Sass" },
+    ],
+    image: "/assets/work/saltmine.webp",
     live: "https://www.behance.net/gallery/206657793/Revolutionizing-Dental-Care",
-    github: "",
+    github: "https://github.com/Uzair-Technology/saltmine-mobileTablet",
   },
   {
     num: "02",
-    category: "Web",
+    category: "Endure Event",
     title: "projects 2",
     description:
-      "I develop responsive and user-friendly web interfaces that ensure a seamless online experience.",
-    stack: [{ name: "Figma" }],
+      "I developed the 'Endure' event registration website, allowing users to easily register for events. The site is responsive, user-friendly, and focused on providing a seamless registration experience, ensuring accessibility across all devices.",
+    stack: [
+      { name: "HTML5" },
+      { name: "Tailwind.css" },
+      { name: "JavaScript" },
+      { name: "Next.js" },
+    ],
     image: "/assets/work/marathon-web.png",
     live: "https://www.behance.net/gallery/204914731/Showcase-Of-Restaurant-Website-Design",
-    github: "",
+    github: "https://github.com/iqtidar234/Event-Project",
   },
   {
     num: "03",
-    category: "UX Case Studies",
+    category: "Prestige Rewards",
     title: "project 2",
     description:
-      "I produce in-depth UX case studies that illustrate my approach to solving design problems and optimizing user experiences.",
-    stack: [{ name: "Figma" }],
-    image: "/assets/work/case-study.png",
+      "I developed the 'Prestige Rewards' e-commerce platform, which includes three distinct user roles: admin, vendor, and customer. The site features a point redemption system, allowing customers to redeem points on purchases. This project focuses on creating a seamless shopping experience for customers, efficient store management for vendors, and robust controls for admins",
+    stack: [
+      { name: "HTML5" },
+      { name: "Tailwind.css" },
+      { name: "JavaScript" },
+      { name: "Next.js" },
+    ],
+    image: "/assets/work/prestige.png",
     live: "https://www.behance.net/gallery/205021653/Tutor-Match-UX-Case-Study",
-    github: "",
+    github: "https://github.com/Uzair-Technology/prestige-user-side",
   },
 ];
 
@@ -89,7 +106,7 @@ const Work = () => {
               </h2>
               <p className="text-white/60">{project.description}</p>
 
-              <ul className=" flex gap-4">
+              <ul className=" flex gap-4 flex-wrap">
                 {project.stack.map((item, index) => {
                   return (
                     <li className="text-xl text-accent" key={index}>
@@ -107,7 +124,7 @@ const Work = () => {
               {/* button */}
               <div className="flex items-center gap-4">
                 {/* live project button */}
-                <Link href={project.live} target="blank">
+                {/* <Link href={project.live} target="blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -118,10 +135,10 @@ const Work = () => {
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                </Link>
+                </Link> */}
 
                 {/* github project button */}
-                {/* <Link href={project.github}>
+                <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -132,7 +149,7 @@ const Work = () => {
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                </Link> */}
+                </Link>
               </div>
             </div>
           </div>
