@@ -21,17 +21,17 @@ export default function Home() {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none ">
-            <span className="text-xl">Front-End Developer </span>
+            <span className="text-xl">video editor </span>
             <h1 className="h1">
               Hello I&apos;m <br />
-              <span className="text-accent">Iqtidar Hussain</span>
+              <span className="text-accent">Sohaib</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I specialize in building seamless and intuitive web applications
-              using React.js and Next.js. With 1 year of hands-on experience, I
-              excel at transforming complex requirements into dynamic,
-              user-friendly interfaces, ensuring smooth functionality and
-              exceptional user experiences across all devices.
+              I specialize in creating engaging and high-quality video content,
+              using my skills in editing and storytelling to bring ideas to
+              life. From promotional videos to creative storytelling, I
+              transform raw footage into polished, visually captivating
+              productions.”
             </p>
 
             {/* button and socials */}

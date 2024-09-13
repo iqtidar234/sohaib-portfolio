@@ -7,30 +7,65 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Responsive Web Development",
+    title: "Video Editing",
     description:
-      "I create responsive websites that adapt seamlessly to different screen sizes and devices, ensuring an optimal user experience on desktop, tablet, and mobile. My designs prioritize accessibility and performance across all platforms.",
-    href: "https://www.behance.net/gallery/204914731/Showcase-Of-Restaurant-Website-Design",
+      "I edit and produce videos that captivate and engage audiences, ensuring seamless transitions, perfect pacing, and stunning visuals.",
+    href: "",
   },
   {
     num: "02",
-    title: "Single Page Applications (SPA)",
+    title: "Promotional Video Production",
     description:
-      " Leveraging the power of React.js and Next.js, I develop efficient Single Page Applications that provide a fast, dynamic user experience without constant page reloads, improving the overall performance and interactivity of your web app.",
-    href: "https://www.behance.net/gallery/205021653/Tutor-Match-UX-Case-Study",
+      "I craft promotional videos that effectively communicate your message, whether for products, services, or brands, with compelling visuals and sound design.",
+    href: "",
   },
   {
     num: "03",
-    title: " UI/UX Integration",
+    title: "Social Media Video Content",
     description:
-      "I integrate visually appealing, user-centric designs with pixel-perfect precision into functional code, ensuring your web applications are not only aesthetically pleasing but also intuitive to use, delivering seamless user experiences.",
-    href: "https://www.behance.net/gallery/206657793/Revolutionizing-Dental-Care",
+      "I develop short, impactful videos optimized for social media platforms like Instagram, TikTok, and Facebook, ensuring they resonate with the target audience.",
+    href: "",
   },
   {
     num: "04",
-    title: "API Integration and State Management",
+    title: "Motion Graphics",
     description:
-      "I handle complex API integrations and state management with tools like Redux and React Context. This ensures smooth data flow across your application, keeping everything synchronized and enhancing user interaction with real-time updates",
+      "I create dynamic motion graphics that enhance your videos with engaging visual effects, perfect for explainer videos, advertisements, and presentations.",
+    href: "",
+  },
+  {
+    num: "05",
+    title: "Cash Cow Video Production",
+    description:
+      "I specialize in producing cash cow videos designed to generate passive income through YouTube channels, combining attention-grabbing visuals with monetizable content strategies.",
+    href: "",
+  },
+  {
+    num: "06",
+    title: "Logo Animation",
+    description:
+      "I bring logos to life with smooth, creative animations that leave a lasting impression and enhance brand identity across digital platforms.",
+    href: "",
+  },
+  {
+    num: "07",
+    title: "Event and Corporate Video Production",
+    description:
+      "I produce high-quality videos for events, conferences, and corporate functions, capturing key moments and delivering a professional final product.",
+    href: "",
+  },
+  {
+    num: "08",
+    title: "Training and Educational Videos",
+    description:
+      "I create instructional and educational videos tailored to your specific needs, making complex topics easy to understand and engaging.",
+    href: "",
+  },
+  {
+    num: "09",
+    title: "Product Reviews and Unboxings",
+    description:
+      "I specialize in producing detailed and engaging product reviews and unboxing videos, showcasing features and benefits to your target audience.",
     href: "",
   },
 ];

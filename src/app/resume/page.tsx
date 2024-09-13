@@ -8,16 +8,16 @@ import { TbBrandRedux } from "react-icons/tb";
 const about = {
   title: "About me",
   descripiton:
-    " I'm Iqtidar Hussain, a frontend React.js and Next.js developer with 1 year of experience. I specialize in building responsive, dynamic web applications, transforming complex ideas into intuitive, user-friendly interfaces. My expertise includes collaborating on projects that require seamless functionality and engaging digital experiences.",
+    "I'm  Sohaib Iqbal, a passionate video editor with 1.5 years of experience. I specialize in creating visually captivating and engaging video content that resonates with audiences. My expertise lies in blending creativity with technical precision, crafting high-quality videos that tell compelling stories. I thrive on transforming ideas into dynamic visuals, delivering emotionally impactful content that leaves a lasting impression. With a keen eye for detail and a commitment to innovation, I aim to push the boundaries of video editing, always striving for perfection in every project",
   info: [
-    { fieldName: "Name", fieldValue: "Iqtidar Hussain" },
-    { fieldName: "Phone", fieldValue: "(+92) 3149133164" },
-    { fieldName: "Experience", fieldValue: "1 Years" },
-    { fieldName: "Skype", fieldValue: "iqtidarhussain" },
+    { fieldName: "Name", fieldValue: "Sohaib Iqbal" },
+    { fieldName: "Phone", fieldValue: "(+92) 3159397089" },
+    { fieldName: "Experience", fieldValue: "1.5+ Year" },
+    { fieldName: "Skype", fieldValue: "sohaibiqbal_02" },
     { fieldName: "Nationality", fieldValue: "Pakistani" },
-    { fieldName: "Email", fieldValue: "iqtidar2345@gmail.com" },
+    { fieldName: "Email", fieldValue: "sohaib.khani2019@gmail.com" },
     { fieldName: "Freelance", fieldValue: "Available" },
-    { fieldName: "Language", fieldValue: "English, Urdu" },
+    { fieldName: "Language", fieldValue: "English, Urdu ,Pashtu" },
   ],
 };
 
@@ -26,12 +26,12 @@ const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
   description:
-    "As a web developer with over a year of experience, I have worked at Uzair Technology, contributing to notable projects such as FarmnCho, Tippie-Doo, PrestigePlusRewards, and Redvok. Beyond hands-on development, I also train and mentor web development teams, ensuring that best practices are followed and fostering growth within the team. My focus is on creating seamless, user-centric web experiences that drive business success.",
+    "video editor at Uzair Technology 2023 / Present I specialized in creating promotional and social media videos that captivate and engage audiences. Using advanced tools like Adobe Premiere Pro and After Effects, I meticulously crafted high-quality video content, ensuring each project was visually stunning and effectively communicated its message. My role involved enhancing video quality with creative effects, smooth transitions, and compelling narratives to maximize viewer engagement. Additionally, as a team lead, I guided and mentored my team, fostering collaboration to achieve our content goals and deliver outstanding video projects that elevated the company's online presence.",
   items: [
     {
       company: "Uzair Technology",
-      position: "Frontend React.js Next.js Developer",
-      duration: "2022 - Present",
+      position: "Video Editor",
+      duration: "2023 - Present",
     },
   ],
 };
@@ -44,7 +44,7 @@ const education = {
     "A blend of creative flair and a strong tech foundation, bridging aesthetics and functionality.",
   items: [
     {
-      institution: "Al-Ilam Public School",
+      institution: "Madina Public School",
       degree: "Matric Education",
       duration: "Completed",
     },
@@ -54,9 +54,9 @@ const education = {
       duration: "Completed",
     },
     {
-      institution: "Kohat University of Science and Technology",
-      degree: "Bachelor of Computer Science",
-      duration: "Currently in 7th Semester",
+      institution: "Virtual University of Pakistan",
+      degree: "Software Engineering",
+      duration: "Currently in 1st Semester",
     },
   ],
 };

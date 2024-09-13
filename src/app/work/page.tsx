@@ -23,10 +23,10 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "Saltmine ",
-    title: "",
+    category: " Video  ",
+    title: "Project 1",
     description:
-      "I developed a website for a saltmine that includes 3D elements to make the user experience more interactive and engaging. The site is designed to be visually appealing and easy to navigate, showcasing the unique features of the saltmine while maintaining smooth functionality.",
+      "I create engaging and high-quality video content that captivates audiences and effectively communicates your message. My projects range from promotional videos to creative storytelling, utilizing advanced editing techniques to produce visually stunning results.",
     stack: [
       { name: "HTML5" },
       { name: "CSS3" },
@@ -41,10 +41,10 @@ const projects = [
   },
   {
     num: "02",
-    category: "Endure Event",
+    category: "Social Media Video Content",
     title: "projects 2",
     description:
-      "I developed the 'Endure' event registration website, allowing users to easily register for events. The site is responsive, user-friendly, and focused on providing a seamless registration experience, ensuring accessibility across all devices.",
+      "I develop short, impactful videos optimized for social media platforms, ensuring they resonate with your target audience and drive engagement. My work includes everything from eye-catching ads to entertaining and informative content.",
     stack: [
       { name: "HTML5" },
       { name: "Tailwind.css" },
@@ -57,10 +57,10 @@ const projects = [
   },
   {
     num: "03",
-    category: "Prestige Rewards",
-    title: "project 2",
+    category: "Motion Graphics and Animations",
+    title: "project 3",
     description:
-      "I developed the 'Prestige Rewards' e-commerce platform, which includes three distinct user roles: admin, vendor, and customer. The site features a point redemption system, allowing customers to redeem points on purchases. This project focuses on creating a seamless shopping experience for customers, efficient store management for vendors, and robust controls for admins",
+      "I design and animate dynamic motion graphics and logo animations that enhance your videos with creative visual effects and professional polish. This includes lower thirds, transitions, and other elements to elevate the overall viewing experience..",
     stack: [
       { name: "HTML5" },
       { name: "Tailwind.css" },
@@ -138,7 +138,7 @@ const Work = () => {
                 </Link> */}
 
                 {/* github project button */}
-                <Link href={project.github}>
+                {/* <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -149,7 +149,7 @@ const Work = () => {
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
