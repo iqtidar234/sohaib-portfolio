@@ -1,7 +1,13 @@
 "use client";
 import { FaHtml5, FaCss3, FaJs, FaReact, FaGithub } from "react-icons/fa";
 import { RiNextjsLine } from "react-icons/ri";
-import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiAdobeaftereffects,
+  SiAdobepremierepro,
+} from "react-icons/si";
 import { TbBrandRedux } from "react-icons/tb";
 
 // about data
@@ -65,16 +71,10 @@ const education = {
 const skills = {
   title: "My skills",
   descripton:
-    "Expert in building responsive and intuitive web applications, with a strong command of tools like React.js and Next.js to create engaging and seamless digital experiences.",
+    "Expert in crafting visually captivating and emotionally impactful videos, with a strong command of tools like Adobe Premiere Pro and After Effects to produce engaging and seamless storytelling experiences.",
   skillList: [
-    { icon: <FaReact />, name: "React.js" },
-    { icon: <SiNextdotjs />, name: "Next.js" },
-    { icon: <FaJs />, name: "JavaScript (ES6+)" },
-    { icon: <FaHtml5 />, name: "HTML5" },
-    { icon: <FaCss3 />, name: "CSS3" },
-    { icon: <SiTailwindcss />, name: "Tailwind.css" },
-    { icon: <FaGithub />, name: "Github" },
-    { icon: <TbBrandRedux />, name: "React/Redux" },
+    { icon: <SiAdobeaftereffects />, name: "After Effect" },
+    { icon: <SiAdobepremierepro />, name: "Adove Premier" },
   ],
 };
 
