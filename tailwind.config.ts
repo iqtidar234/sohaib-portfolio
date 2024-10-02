@@ -28,7 +28,7 @@ const config = {
         primary: "#1c1c22",
         accent: {
           DEFAULT: "#FFA000",
-          hover: "#0A68B4",
+          hover: "#FFA000",
         },
       },
       keyframes: {

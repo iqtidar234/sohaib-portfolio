@@ -1,72 +1,81 @@
 "use client";
 
 import { motion } from "framer-motion";
-import React, { useState } from "react";
-
+import React, { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
-
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@radix-ui/react-tooltip";
-
-import Link from "next/link";
 import Image from "next/image";
-import { title } from "process";
 import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
     num: "01",
-    category: " Video  ",
+    category: " product animation  ",
     title: "Project 1",
     description:
-      "I create engaging and high-quality video content that captivates audiences and effectively communicates your message. My projects range from promotional videos to creative storytelling, utilizing advanced editing techniques to produce visually stunning results.",
-    stack: [
-      { name: "HTML5" },
-      { name: "CSS3" },
-      { name: "JavaScript" },
-      { name: "Next.js" },
-      { name: "MaterialUi" },
-      { name: "Sass" },
-    ],
+      "Product animation is a visual technique used to showcase a product's design, features, and functionality through motion. It allows viewers to see the product in action, often highlighting details that may not be easily visible in static images. This type of animation can demonstrate how the product works, how its parts fit together, or how it solves a particular problem. Product animations are commonly used in marketing, e-commerce, and product demonstrations to help potential customers understand the product's value and benefits in a more engaging and interactive way.",
+    stack: [{ name: "Ae" }, { name: "Pr" }],
     image: "/assets/work/saltmine.webp",
+    video: "/videos/jaymproductanimation.mp4",
     live: "https://www.behance.net/gallery/206657793/Revolutionizing-Dental-Care",
     github: "https://github.com/Uzair-Technology/saltmine-mobileTablet",
   },
   {
     num: "02",
-    category: "Social Media Video Content",
+    category: "social media video",
     title: "projects 2",
     description:
-      "I develop short, impactful videos optimized for social media platforms, ensuring they resonate with your target audience and drive engagement. My work includes everything from eye-catching ads to entertaining and informative content.",
-    stack: [
-      { name: "HTML5" },
-      { name: "Tailwind.css" },
-      { name: "JavaScript" },
-      { name: "Next.js" },
-    ],
+      "A social media video is a short, engaging video designed specifically for platforms like Instagram, Facebook, TikTok, and YouTube. These videos are usually tailored to capture attention quickly, with eye-catching visuals and clear messaging. They can be used for various purposes, such as promoting products, sharing tutorials, telling stories, or creating brand awareness. Social media videos are typically optimized for mobile viewing and often include captions, music, and quick transitions to keep viewers engaged. Their goal is to encourage interaction, sharing, and building connections with the audience.",
+    stack: [{ name: "Ae" }, { name: "Pr" }],
     image: "/assets/work/marathon-web.png",
+    video: "/videos/social-media-video.mp4",
     live: "https://www.behance.net/gallery/204914731/Showcase-Of-Restaurant-Website-Design",
     github: "https://github.com/iqtidar234/Event-Project",
   },
   {
     num: "03",
-    category: "Motion Graphics and Animations",
+    category: "logo animation",
     title: "project 3",
     description:
-      "I design and animate dynamic motion graphics and logo animations that enhance your videos with creative visual effects and professional polish. This includes lower thirds, transitions, and other elements to elevate the overall viewing experience..",
-    stack: [
-      { name: "HTML5" },
-      { name: "Tailwind.css" },
-      { name: "JavaScript" },
-      { name: "Next.js" },
-    ],
+      "Logo animation is the process of bringing a logo to life through motion and special effects. It adds movement, transitions, and visual flair to a static logo, making it more dynamic and engaging. Animated logos are often used in video intros, advertisements, websites, and social media to capture attention and leave a lasting impression. The animation can include elements like the logo appearing, transforming, or interacting with its environment in creative ways. Logo animation helps enhance brand identity by making the logo more memorable and visually appealing to audiences.",
+    stack: [{ name: "Ae" }, { name: "Pr" }],
+    video: "/videos/logo-animation.mp4",
+    image: "/assets/work/prestige.png",
+    live: "https://www.behance.net/gallery/205021653/Tutor-Match-UX-Case-Study",
+    github: "https://github.com/Uzair-Technology/prestige-user-side",
+  },
+  {
+    num: "04",
+    category: "Icon Animation",
+    title: "project 3",
+    description:
+      "Icon animation involves adding movement and effects to simple icons to make them more interactive and engaging. These animations can range from subtle transitions, like fading or sliding, to more complex movements, such as icons morphing or rotating. Icon animations are often used in websites, apps, or user interfaces to enhance user experience by providing visual feedback, guiding users, or drawing attention to key actions or features. Animated icons make interfaces feel more responsive and dynamic, helping to create a more engaging and intuitive experience for users.",
+    stack: [{ name: "Ae" }, { name: "Pr" }],
+    video: "/videos/icon-animation.mp4",
+    image: "/assets/work/prestige.png",
+    live: "https://www.behance.net/gallery/205021653/Tutor-Match-UX-Case-Study",
+    github: "https://github.com/Uzair-Technology/prestige-user-side",
+  },
+  {
+    num: "05",
+    category: "Slide Show ",
+    title: "project 3",
+    description:
+      "Slideshow videos may include background music, text, effects, or voiceovers to make the presentation more engaging. They are commonly used for events, promotions, tutorials, or memories. The simplicity of a slideshow video makes it a great option for summarizing key points or visually presenting a series of ideas in a clear and appealing way.",
+    stack: [{ name: "Ae" }, { name: "Pr" }],
+    video: "/videos/slide-show.mp4",
+    image: "/assets/work/prestige.png",
+    live: "https://www.behance.net/gallery/205021653/Tutor-Match-UX-Case-Study",
+    github: "https://github.com/Uzair-Technology/prestige-user-side",
+  },
+  {
+    num: "06",
+    category: "Icon Animation",
+    title: "project 3",
+    description:
+      "Motion graphics is a type of animation that combines graphic design and movement to create visually engaging content. It involves animating text, shapes, illustrations, and other visual elements to communicate ideas or tell a story. Unlike traditional animation, which focuses on character movements, motion graphics often highlight abstract elements, like logos, charts, or data, and are commonly used in explainer videos, advertisements, presentations, and social media. The purpose of motion graphics is to make information more dynamic and easier to understand while adding a creative and polished look to the content.",
+    stack: [{ name: "Ae" }, { name: "Pr" }],
+    video: "/videos/motion-graphic.mp4",
     image: "/assets/work/prestige.png",
     live: "https://www.behance.net/gallery/205021653/Tutor-Match-UX-Case-Study",
     github: "https://github.com/Uzair-Technology/prestige-user-side",
@@ -75,6 +84,13 @@ const projects = [
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);
+  const videoRef = useRef<any>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.volume = 1.0; // Set volume to full
+    }
+  }, []);
 
   const handleSlideChange = (swiper: any) => {
     // get current slide index
@@ -102,7 +118,7 @@ const Work = () => {
 
               {/* project Category */}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.category}
               </h2>
               <p className="text-white/60">{project.description}</p>
 
@@ -168,11 +184,19 @@ const Work = () => {
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* iamge */}
                       <div className="relative w-full h-full">
-                        <Image
+                        {/* <Image
                           src={project.image}
                           fill
                           className="object-cover"
                           alt=""
+                        /> */}
+                        <video
+                          ref={videoRef}
+                          autoPlay
+                          muted // Add this line to allow autoplay
+                          loop
+                          src={project.video}
+                          className="absolute w-full h-full"
                         />
                       </div>
                     </div>

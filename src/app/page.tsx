@@ -37,7 +37,7 @@ export default function Home() {
             {/* button and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a
-                href="/my-portfolio.pdf"
+                href="/my-portfolio.webp"
                 target="_blank"
                 rel="noopener noreferrer"
               >
