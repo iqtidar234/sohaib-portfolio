@@ -6,9 +6,8 @@ import { AiFillInstagram } from "react-icons/ai";
 const socials = [
   {
     icon: <FaLinkedinIn />,
-    path: "https://www.linkedin.com/in/iqtidar-hussain-49b45a287/",
+    path: "https://www.linkedin.com/in/sohaibiqbal02/",
   },
-  { icon: <FaGithub />, path: "https://github.com/iqtidar234" },
 ];
 const Social = ({
   containerStyles,
